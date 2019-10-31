@@ -21,7 +21,14 @@
       "host01": [
         {
           "file": "*",
-          "target": "/root",
+          "target": "/home/scrapbook/tutorial",
+          "chmod": "a+x"
+        }
+      ],
+      "client": [
+        {
+          "file": "*",
+          "target": "/home/scrapbook/tutorial",
           "chmod": "a+x"
         }
       ]
@@ -29,7 +36,7 @@
   },
   "environment": {
     "uilayout": "editor-terminal",
-    "uieditorpath": "/root/eth-workshop",
+    "uieditorpath": "/home/scrapbook/tutorial",
     "showdashboard": true,
     "dashboards": [
       { 
@@ -40,6 +47,6 @@
     ]
   },
   "backend": {
-    "imageid": "ubuntu"
+    "imageid": "python"
   }
 }

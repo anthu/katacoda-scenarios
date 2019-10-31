@@ -32,7 +32,7 @@ function main () {
         echo "failed to clone ${samples_git}"
         return 1
     fi
-    cd /root/eth-workshop
+    cd /home/scrapbook/tutorial/eth-workshop
     echo "All set, you can now start your class."
 }
 
