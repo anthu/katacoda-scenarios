@@ -1,6 +1,9 @@
 #!/bin/bash
 
 function main () {
+
+    cd /root/course
+    
     local venv_path="$HOME/.venvs/chaostk/bin/activate"
 
     echo "Waiting for environment to be fully updated..."
@@ -25,7 +28,7 @@ function main () {
         echo "failed to create Python virtual environment"
         return 1
     fi
-
+    
     local samples_git="https://github.com/chaostoolkit/chaostoolkit-samples.git"
     echo "Cloning class samples from ${samples_git}"
     if ! git clone --quiet --depth 1 $samples_git; then
@@ -33,8 +36,6 @@ function main () {
         return 1
     fi
 
-    cd /root/course
-    
     echo "All set, you can now start your class."
 }
 
