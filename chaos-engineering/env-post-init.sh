@@ -1,2 +1,2 @@
 sleep 3s
-./postinst.sh
+/root/postinst.sh

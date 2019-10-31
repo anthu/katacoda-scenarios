@@ -21,7 +21,7 @@
       "host01": [
         {
           "file": "*",
-          "target": "/root/course",
+          "target": "/root",
           "chmod": "a+x"
         }
       ]

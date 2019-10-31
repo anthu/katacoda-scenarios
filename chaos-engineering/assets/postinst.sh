@@ -33,6 +33,8 @@ function main () {
         return 1
     fi
 
+    cd /root/course
+    
     echo "All set, you can now start your class."
 }
 
