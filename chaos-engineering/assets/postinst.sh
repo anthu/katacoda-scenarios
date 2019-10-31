@@ -3,7 +3,7 @@
 function main () {
 
     cd /root/course
-    
+
     local venv_path="$HOME/.venvs/chaostk/bin/activate"
 
     echo "Waiting for environment to be fully updated..."
@@ -29,7 +29,7 @@ function main () {
         return 1
     fi
     
-    local samples_git="https://github.com/chaostoolkit/chaostoolkit-samples.git"
+    local samples_git="https://github.com/kaisert/eth-workshop.git"
     echo "Cloning class samples from ${samples_git}"
     if ! git clone --quiet --depth 1 $samples_git; then
         echo "failed to clone ${samples_git}"
