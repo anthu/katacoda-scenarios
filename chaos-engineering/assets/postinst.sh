@@ -1,9 +1,6 @@
 #!/bin/bash
 
 function main () {
-
-    cd /root/course
-
     local venv_path="$HOME/.venvs/chaostk/bin/activate"
 
     echo "Waiting for environment to be fully updated..."
@@ -35,7 +32,7 @@ function main () {
         echo "failed to clone ${samples_git}"
         return 1
     fi
-
+    cd /root/eth-workshop
     echo "All set, you can now start your class."
 }
 

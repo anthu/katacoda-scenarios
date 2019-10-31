@@ -29,7 +29,7 @@
   },
   "environment": {
     "uilayout": "editor-terminal",
-    "uieditorpath": "/root/course",
+    "uieditorpath": "/root/eth-workshop",
     "showdashboard": true,
     "dashboards": [
       { 
