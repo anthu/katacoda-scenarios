@@ -30,9 +30,13 @@
   "environment": {
     "uilayout": "editor-terminal",
     "uieditorpath": "/root/course",
-    "showdashboard": false,
+    "showdashboard": true,
     "dashboards": [
-      { "name": "Shop", "port": 8080 }
+      { 
+        "name": "Shop", 
+        "port": 8080, 
+        "host": "host01" 
+      }
     ]
   },
   "backend": {
