@@ -1,12 +1,12 @@
 {
-  "private": true,
+  "private": false,
   "title": "Chaos Engineering",
   "description": "",
   "difficulty": "Beginner",
   "time": "60 minutes",
   "details": {
     "steps": [{
-        "title": "Setup the services in Kubernetes",
+        "title": "Launching the microservices",
         "text": "setup-services.md"
     }],
     "intro": {
@@ -20,15 +20,13 @@
     "assets": {
       "host01": [
         {
-          "file": "*",
-          "target": "/home/scrapbook/tutorial",
+          "file": "postinst.sh",
+          "target": "/root",
           "chmod": "a+x"
-        }
-      ],
-      "client": [
+        },
         {
-          "file": "*",
-          "target": "/home/scrapbook/tutorial",
+          "file": "clonerepo.sh",
+          "target": "/root",
           "chmod": "a+x"
         }
       ]
@@ -36,17 +34,18 @@
   },
   "environment": {
     "uilayout": "editor-terminal",
-    "uieditorpath": "/home/scrapbook/tutorial",
+    "uieditorpath": "/root/eth-workshop",
     "showdashboard": true,
     "dashboards": [
       { 
         "name": "Shop", 
         "port": 8080, 
-        "host": "host01" 
+        "host": "host01"
       }
     ]
   },
   "backend": {
-    "imageid": "python"
+    "imageid": "ubuntu",
+    "port": 8080
   }
 }

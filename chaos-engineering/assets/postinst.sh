@@ -1,6 +1,13 @@
 #!/bin/bash
 
 function main () {
+    apt-get update
+    apt-get install -y python3-dev python3-venv libssl-dev
+    mkdir ~/.venvs
+    python3 -m venv ~/.venvs/chaostk
+    source ~/.venvs/chaostk/bin/activate
+    pip install -q -U chaostoolkit
+
     local venv_path="$HOME/.venvs/chaostk/bin/activate"
 
     echo "Waiting for environment to be fully updated..."
@@ -26,14 +33,7 @@ function main () {
         return 1
     fi
     
-    local samples_git="https://github.com/kaisert/eth-workshop.git"
-    echo "Cloning class samples from ${samples_git}"
-    if ! git clone --quiet --depth 1 $samples_git; then
-        echo "failed to clone ${samples_git}"
-        return 1
-    fi
-    cd /home/scrapbook/tutorial/eth-workshop
-    echo "All set, you can now start your class."
+    echo "Environment prepared."
 }
 
 main || exit 1

@@ -1,1 +1,3 @@
-`curl https://[[HOST_SUBDOMAIN]]-[[KATACODA_HOST]].environments.katacoda.com/`{{execute T1}}
+# Welcome to the Chaos Engineering workshop for ETH
+
+In this workshop you will learn how to create Chaos experiments.
