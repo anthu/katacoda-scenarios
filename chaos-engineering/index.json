@@ -8,6 +8,10 @@
     "steps": [{
         "title": "Launching the microservices",
         "text": "setup-services.md"
+    },
+    {
+      "title": "Explore service down behaviour",
+      "text": "explore-service-down-behaviour.md"
     }],
     "intro": {
         "text": "intro.md",
