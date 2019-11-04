@@ -12,6 +12,10 @@
     {
       "title": "Explore service down behaviour",
       "text": "explore-service-down-behaviour.md"
+    },
+    {
+      "title": "Explore Toxiproxy",
+      "text": "toxiproxy.md"
     }],
     "intro": {
         "text": "intro.md",
