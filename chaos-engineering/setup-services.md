@@ -6,8 +6,21 @@ Let's explore them by running `docker-compose up`{{execute}}
 
 This command is building docker containers connecting them to communicate with each other.
 
-Now connect to the Application by clicking the **Shop** tab above your termina.
+## Access the Shop
+Each environment has a unique URL.
+To the Application by clicking the **Shop** tab next to the **Terminal** tab. 
 
+## Swagger UI
+To access the Swagger UI append the `/ui` to the Shop URL:
+https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/ui
+
+
+## Stopping the Application
 You can stop the application by pressing `control + C`(Mac) or `Ctrl + C`(Linux/Win).
 
 To clean up run `docker-compose down`{{execute}}
+This will clean up the the Environment and network.
+
+
+## Next steps
+After you cleaned up the environment we will explore some weaknesses of this application. Please go ahead.
