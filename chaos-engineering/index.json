@@ -16,6 +16,10 @@
     {
       "title": "Explore Toxiproxy",
       "text": "toxiproxy.md"
+    },
+    {
+      "title": "Explore Chaostoolkit",
+      "text": "chaostoolkit.md"
     }],
     "intro": {
         "text": "intro.md",
