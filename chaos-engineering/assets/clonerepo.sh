@@ -10,8 +10,8 @@ function main () {
     fi
 
     echo "Pre-pulling docker images"
-    docker pull python:3-alpine &> /dev/null
-    docker pull postgres:alpine &> /dev/null
+    docker pull python:3-alpine > /dev/null 2>&1 &
+    docker pull postgres:alpine > /dev/null 2>&1 &
 
     echo "All set, you can now start your class."
 }
