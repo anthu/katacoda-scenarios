@@ -20,7 +20,3 @@ You can stop the application by pressing `control + C`(Mac) or `Ctrl + C`(Linux/
 
 To clean up run `docker-compose down`{{execute}}
 This will clean up the the Environment and network.
-
-
-## Next steps
-After you cleaned up the environment we will explore some weaknesses of this application. Please go ahead.

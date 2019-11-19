@@ -6,4 +6,10 @@ So we will do in this szenario.
 
 Let's spin up our webshop with toxiproxy:
 
-`docker-compose up -d`{{execute}}
+First checkout out the toxiproxy branch:
+`git checkout steps/3-toxiproxy`{{execute}}
+
+![Application with Toxiproxy](/chaos-engineering/assets/app_toxiproxy.png)
+
+Then start the application again:
+`docker-compose up`{{execute}}
