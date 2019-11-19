@@ -8,7 +8,11 @@ function main () {
         echo "failed to clone ${samples_git}"
         return 1
     fi
-    
+
+    echo "Pre-pulling docker images"
+    docker pull python:3-alpine &
+    docker pull postgres:alpine &
+
     echo "All set, you can now start your class."
 }
 
